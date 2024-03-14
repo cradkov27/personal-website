@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor's Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/ico" href="codefav.ico">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <nav id="navbar">
+        <div class="desktop-nav">
+            <p><a href="index.html">Home</a></a></p>
+            <p><a href="Radkov Resume - Final.pdf" target="_blank">Resume</a></p>
+            <p><a href="project.html">Projects</a></p>
+        </div>
+        <div class="mobile-nav">
+            <button class="menu-button" onclick="toggleMenu()">&#9776; Menu</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Radkov Resume - Final.pdf" target="_blank">Resume</a></p>
+                <p><a href="project.html">Projects</a></p>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main body of projects page-->
+    <main id="mainProjects">
+
+        <!-- Current Projects -->
+        <div id="currentProjects">
+            <h3 style="color: white; font-size: 40px;">Current Projects:</h3>
+
+            <div class="projectBlurbView" id="researchAppBlurb">
+                <h3 style="color: white; font-size: 30px;"> OSU Student Research Web App </h3>
+                <h5 style="font-size: 20px;">Used: MongoDB, Spring Boot</h5>
+                <h5 style="font-size: 20px;">03/04/2024 - PRESENT</h5>
+                <p class="projectDesc">My team in the Software Engineering Club partnered with OSU's <a href="https://usg.osu.edu/" target="_blank">Undergraduate Student Government</a> to create a full stack web app that allows undergrad students to connect with professors on campus with the goal of acquiring research. My job within the project is to manage backend technologies. We are using MongoDB and Spring Boot to manage the backend of this web app.</p>
+                &nbsp;
+                <p class="projectDesc">This is my first programming project that has been commissioned by a stakeholder. Not only am I strengthening my backend programming knowledge, but I am learning how to translate the goals of stakeholders into a desirable end product. I am eager for this web app to go live so that students at OSU have an easy way to get involved with on-campus research!</p>
+            </div>
+
+            &nbsp;
+
+            <!-- <div class="projectBlurbView" id="monteCarloBlurb">
+                <h4> Monte Carlo DATE </h4>
+                <p>This is for the monte carlo</p>
+            </div> -->
+
+            
+        </div>
+
+        &nbsp;
+
+        <!-- Completed Projects-->
+        <div id="completedProjects"> 
+
+            <h3 style="color: white; font-size: 40px;">Past Projects:</h3>
+
+            <div class="projectBlurbView" id="HousingAIBlurb">
+                
+                <div id="aiHeader">
+                    <div class="projectImage" id="aiPic">
+                        <img src="pandas.png" id="pandasImg">
+                    </div>
+                    <div id="aiTextInfo">
+                        <h4> <a href="https://github.com/alexeichner/HackAI-2024" target="_blank" class="link" style="font-size: 30px;">Housing.AI Full Stack Web App</a> </h4>
+                        <h5 style="font-size: 20px;">Used: Pandas, Numpy, Scikit Learn, ExpressJS</h5>
+                        <h5 style="font-size: 20px">02/17/2024 - 02/18/2024</h5>
+                    </div>
+                    <div class="projectImage" id="blackScreen">
+                        <img src="blackScreen.jpeg">
+                    </div>
+                </div>
+
+                <p class="projectDesc">Alex Eicher and I participated in OSU's 5th annual HackAI competition, which is a hackathon centered around solving a problem with machine learning. Alex and I decided to build a web app that used a linear regression model to predict the selling price of a house based on various criteria. </p>
+                &nbsp;
+                <p class="projectDesc">This project was my first experience using ML Python libraries. I learned a lot about the process of effectively training an AI model and can appreciate the work that goes into making today's LLMs. I also learned about the process of creating a full stack application. I found the process of planning the architecture of an app to be fascinating and I hope to continue doing backend work in the future.</p>
+            </div>
+
+            &nbsp;
+
+            <div class="projectBlurbView" id="dungeonHeroFEHBlurb">
+                
+                <div id="FEH-header">
+                    <div class="projectImage" id="FEH1">
+                        <img src="DungeonHeroFEH1.png">
+                    </div>
+                    <div id="FEH-textInfo">
+                        <h4 style="font-size: 30px"> <a href="https://github.com/cradkov27/Dungeon-Hero-FEH" target="_blank" class="link">Dungeon Hero Game</a> </h4>
+                        <h5 style="font-size: 20px">Used: C++</h5>
+                        <h5 style="font-size: 20px">11/27/2023 - 12/04/2023</h5>
+                    </div>
+                    <div class="projectImage" id="FEH2">
+                        <img src="DungeonHeroFEH2.png">
+                    </div>
+                </div>
+
+                <p class="projectDesc">Dungeon Hero is a game created using OSU's <a class="link" href="https://u.osu.edu/fehproteus/" target="_blank">FEH Proteus Simulator</a>. It was submitted as the final project of ENGR 1281.01H, and it was created by Guy Levi (a fellow student) and myself. I wrote the code for the game while Guy created the graphics. The objective of the game is to escape the dungeon, all while killing enemies and collecting coins from chests. Players are able to upgrade the speed and power of their character using coins. The game is divided into levels and includes an infinite number of levels, providing hours of fun. The game is written in C++ and can be compiled following the instructions on the FEH Proteus website. You can download the game yourself using the link above!</p>
+                &nbsp;
+                <p class="projectDesc">This was the first major programming project that I had the pleasure of working on. I became a master of call-by-reference and all things related to pointers. I also learned how to effectively manage a codebase with a team, which is a skill I would not have considered to hone if not for this project.</p>
+            </div>
+
+            &nbsp;
+
+            <div class="projectBlurbView" id="mondoVendingBlurb">
+                <div id="vendingPic">
+                    <img src="vendingpic.jpg">
+                </div>
+                <div id="vendingContent">
+                    <h4 style="color: white; font-size: 30px;"> Mondo Vending LLC </h4>
+                    <h5 style="font-size: 20px;"> 02/01/2021 - 08/01/2023 </h5>
+                    <p class="projectDesc">Mondo Vending is the vending machine business that I ran for two years. I grew the business to operate 3 machines in 3 different locations. I was responsible for restocking the machines and providing regular maintenance. I successfully sold the business before moving to Columbus to attend OSU.</p>
+                    &nbsp;
+                    <p class="projectDesc">I grew this business by putting hours into emailing and calling local businesses to sell them on my services. I learned how to be an effective salesman and became a master negotaitor once a business desired my services. While running Mondo Vending, I played the role of accountant, customer service representative, and salesman. Not to mention, I became very familiar with the inner workings of vending machines.</p>
+                </div> 
+            </div>
+
+            &nbsp;
+
+            <div class="projectBlurbView" id="cleanUpBlurb">
+
+                <div id="cleanupheader">
+                    <div id="cleanuppic1">
+                        <img src="cleanup1.jpg">
+                    </div>
+                    <div id="cleanupheadertext">
+                        <h4 style="font-size: 30px;"> <a href="https://cleanup419.org/" target="_blank" class="link">Clean Up 419</a> </h4>
+                        <h5 style="font-size: 20px;"> 04/01/2022 - 05/01/2023 </h5>
+                    </div>
+                    <div id="cleanuppic2">
+                        <img src="cleanup2.jpg">
+                    </div>
+                </div>
+            
+                <p class="projectDesc">Clean Up 419 is an environmentalist organization that I co-founded with Alex Eichner and Ben Graalman. The goal of the organization was to lessen the amount of litter around our community. We organized weekly litter cleanups and the organization grew to over 70 members! We were interviewed by <a href="https://nbc24.com/whats-going-on/southview-high-school-seniors-helping-beautify-environment-with-clean-up-419-club" target="_blank">NBC</a> and were invited to speak at various events regarding the importance of environmentalism. Photos of our cleanups can be found on our <a href="https://www.instagram.com/clean_up419/" target="_blank">Instagram page</a>.</p>
+                &nbsp;
+                <p class="projectDesc">I served as CFO of Clean Up 419 and was in charge of managing funds for the organization. I oversaw the purchase of saftey vests, gloves, trash bags, and also oversaw the removal of trash bags after cleanup events. While running this organization, I learned how to effectively manage groups of people as well as manage finances for an organization. Most importantly, I learned how one person can have a massive positive impact on the environment.</p>
+            </div>
+
+            &nbsp;
+
+            <div class="projectBlurbView" id="researchArticle">
+                <h4 style="font-size: 30px;""> <a href="https://www.jsr.org/hs/index.php/path/article/view/3101" target="_blank"> Chinese Stock Research Paper</a> </h4>
+                <h5 style="font-size: 20px;"> 08/01/2021 - 08/31/2022 </h5>
+                <p class="projectDesc">This is a research project I headed that investigated a possible correlation between the price of Chinese ADRs and various economic policies implemented by the Chinese Government. I analyzed the price movement of 53 different stocks after 31 key economic policies were passed in China. The final research paper ended up being 88 pages and concluded that there was no major correlation between the policies studied and the price movement of Chinese ADRs. The paper was published in the Journal of Student Research and has been downloaded nearly 100 times. It can be accessed from the link above.</p>
+                &nbsp;
+                <p class="projectDesc">This project was a great way to hone my technical writing skills. I also learned a great deal about collecting and analyzing data in an efficient manner. I became closely acquanted with SEC documents while hunting down obscure Chinese companies. If you have any questions regarding the research, feel free to reach out using my contact form in the header!</p>
+            </div>
+
+        </div>
+        
+
+    </main>
+
+    
+    <script>
+        function toggleMenu() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+        }
+        function openResume() {
+        window.open('Radkov Resume.docx', '_blank');
+        }
+    </script>    
+</body>
+</html>

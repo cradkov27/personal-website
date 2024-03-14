@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor's Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/ico" href="codefav.ico">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <nav id="navbar">
+        <div class="desktop-nav">
+            <p><a href="index.html">Home</a></a></p>
+            <p><a href="Radkov Resume - Final.pdf" target="_blank">Resume</a></p>
+            <p><a href="project.html">Projects</a></p>
+        </div>
+        <div class="mobile-nav">
+            <button class="menu-button" onclick="toggleMenu()">&#9776; Menu</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Radkov Resume - Final.pdf" target="_blank">Resume</a></p>
+                <p><a href="project.html">Projects</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <main id="homeMain">
+        <div id="homeText">
+            <h1 id="helloConnor">Hi, I'm <span style="color: rgb(248, 156, 52)">Connor Radkov</span>.</h1>
+            &nspar;
+            <p>I'm a student at The Ohio State University double majoring in <span style="color: rgb(206, 21, 206)">Data Analytics</span> and <span style="color: rgb(43, 225, 43)">Financial Mathematics</span>.</p>
+            &nspar;
+            <p>I am interested in the intersection of finance and computer science. Specifically, I enjoy learning about algorithmic trading, startups, private capital markets, and AI.</p>
+            &nspar;
+            <p>At OSU, I am a <span style="color: rgb(16, 250, 250);">Software Engineer</span> for the <a href="https://osu.dev/?redirect=tosudev" target="_blank">Software Engineering Club</a> where I solve unique problems around campus using programming. I am also a <span style="color: rgb(247, 247, 28);">Venture Capital Analyst</span> in <a href="https://www.bvosu.com/" target="_blank">Buckeye Ventures</a>, the premier venture capital and private equity club at OSU.</p>
+            &nspar;
+            <p>If you'd like to get in touch, you can email me at <span style="color: red">radkov.2@osu.edu</span>. You can also visit my <a href="https://www.linkedin.com/in/connor-radkov/" target="_blank">LinkedIn</a> and <a href="https://github.com/cradkov27" target="_blank">GitHub</a> to learn more about what I've been up to.</p>
+        </div>
+    </main>
+
+
+    <script>
+        function toggleMenu() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+        }
+        function openResume() {
+            window.open('Radkov Resume.docx', '_blank');
+        }
+    </script>
+
+</body>
+</html>

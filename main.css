@@ -1,0 +1,217 @@
+* {
+    background-color: black;
+    font-family: 'andale mono', monospace;
+    box-sizing: border-box;
+}
+
+.projectBlurbView {
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+p, a, h1{
+   color: white;
+}
+
+#navbar a:hover, #home.p:hover {
+    font-size: 30;
+    font-weight: bold;
+    color: rgb(234, 106, 234);
+}
+
+#navbar p{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+#link h4:hover, a:hover{
+    font-size: 30;
+    font-weight: bold;
+    color: rgb(234, 106, 234);
+}
+
+h5 {
+    color: white;
+}
+
+#homeMain {
+    padding-left: 40px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+#completedProjects {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#currentProjects {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#helloConnor {
+    display: inline-block;
+    font-weight: bold;
+    border-right: 3px solid;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(22),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+.projectDesc {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#FEH1 img, #FEH2 img{
+    padding: 15px;
+    height: 300px;
+    width: 350px;
+    display: inline-block;
+}
+
+#FEH-textInfo, #cleanupheadertext, #aiTextInfo {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+#FEH-header, #cleanupheader, #aiHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#vendingPic img {
+    height: 400px;
+    width: 325px;
+    padding: 20px;
+}
+
+#mondoVendingBlurb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cleanuppic1 img, #cleanuppic2 img{
+    padding: 15px;
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+}
+
+#aiPic img, #blackScreen img {
+    height: 200px;
+    width: 250px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    #pandasImg, #blackScreen, #FEH1, #FEH2, #vendingPic, #cleanuppic1, #cleanuppic2{
+      display: none;
+    }
+    #homeText h1, p {
+      text-align: center;
+    }
+    #homeMain {
+      width: 90%;
+    }
+    #helloConnor {
+        width: 90%; 
+        white-space: normal;
+        animation: none;
+        border: none;
+        width: 100%;
+    }
+
+  }
+
+ /* Additional styles for mobile dropdown menu */
+.mobile-nav {
+    display: none;
+}
+
+.menu-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: black;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    font-size: 14px; /* Adjust the font size for mobile */
+}
+
+.dropdown-content p:hover {
+    background-color: rgb(234, 106, 234);
+    color: black;
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav .menu-button {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: static;
+        width: 100%;
+    }
+
+    .mobile-nav:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content p {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        text-align: left;
+        display: block;
+        width: 100%;
+        font-size: 18px !important; /* Adjust the font size for mobile */
+    }
+}
